@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ytFlair- Young Tech Flair</title>
+    <title>tFlair- Tech Flair</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,8 +33,10 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <img src="img/logo1.png" class="img-fluid" alt="">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 3rem;">Young Tech Flair</a>
+          
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 3rem;">Tech Flair</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -51,6 +53,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
+
         </div>
       </div>
     </nav>
@@ -60,19 +63,21 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-5">It is time to get the young ones on board. Discover and enhance talent before someone else does!</h1>
+              <h1 class="mb-5">It is time to get the young ones on board. Discover and enhance tech talent before someone else does!</h1>
               
-              <input class="form-control" placeholder="Enter your Email. Eg youngtechflair@gmail.com">
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger"> Sign Up to our weekly newsletter!</a>
+              <input class="form-control" placeholder="Enter your Email. Eg youngtechflair@gmail.com" name="newsletter" id="newsletter">
+              <a href="" id="newsl" class="btn btn-outline btn-xl js-scroll-trigger"> Sign Up to our weekly newsletter!</a>
             
             </div>
           </div>
           <div class="col-lg-5 my-auto">
+
             <div class="device-container">
               <div class="device-mockup galaxy_tab4_land_white white">
                 <div class="device">
                   <div class="screen">
                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="img/demo-screen.jpg" class="img-fluid" alt="">
                     <img src="img/demo-screen.jpg" class="img-fluid" alt="">
                   </div>
                   <div class="button">
@@ -94,7 +99,7 @@
             <p>Stay tuned for pictures from our Young Tech Flair trainings. Sign up with us now and get started! The wait is over!</p>
             <div class="badges">
               <a class="badge-link" href="#signup"><button class="btn btn-primary" type="Submit">Register Now</button></a>
-              <a class="badge-link" href="#"><button class="btn btn-primary" type="Submit">Sign Up for our newsletter</button></a>
+              <a class="badge-link" href="#newsletter"><button class="btn btn-primary" type="Submit">Sign Up for our newsletter</button></a>
             </div>
           </div>
         </div>
@@ -177,7 +182,7 @@
                 <div class="form-group row">
                   <label for="userName" class="col-sm-2 col-form-label">Name</label>
                   <div class="col-sm-10">
-                    <input type="text"  class="form-control" id="userName" placeholder="Martha Teye" name="userName">
+                    <input type="text" name="userName"  class="form-control" id="userName" placeholder="Martha Teye" />
                   </div>
                 </div>
                 <div class="form-group row">
@@ -225,12 +230,12 @@
                 <h2>Follow us on Social media</h2>
                 <ul class="list-inline list-social">
                   <li class="list-inline-item social-twitter">
-                    <a href="#">
+                    <a href="https://twitter.com/tech_flair">
                       <i class="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li class="list-inline-item social-facebook">
-                    <a href="#">
+                    <a href="https://www.facebook.com/techflair.tf/">
                       <i class="fab fa-facebook"></i>
                     </a>
                   </li>
@@ -240,7 +245,7 @@
                     </a>
                   </li>
                   <li class="list-inline-item social-google-plus">
-                      <a href="mailto:youngtechflair@gmail.com?Subject=Young%20Tech%20Flair%20Enquries">
+                      <a href="mailto:techflair.tf@gmail.com?Subject=Tech%20Flair%20Enquries">
                         <i class="fa fa-envelope"></i>
                         
                       </a>
@@ -255,7 +260,7 @@
 
     <footer>
       <div class="container">
-        <p>&copy; Young Tech Flair 2019. All Rights Reserved. Email us at youngtechflair@gmail.com</p>
+        <p>&copy; Tech Flair 2019. All Rights Reserved. Email us at techflair.tf@gmail.com</p>
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="#">Privacy</a>
@@ -278,29 +283,64 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
     
     <script>
-      var $form = $('#test-form'),
+      var $form = $('#test-form :input'),
       url = 'https://script.google.com/macros/s/AKfycbw3dwnPqeC-KepnVDINcn-P3GtoqwL_QeTuJ-JBZcWQZI5KSSn4/exec'
-
+      url1 = 'https://script.google.com/macros/s/AKfycbw3dwnPqeC-KepnVDINcn-P3GtoqwL_QeTuJ-JBZcWQZI5KSSn4/exec'
+      
       $('#submit-form').on('click', function(e) {
         e.preventDefault();
-        var jqxhr = $.ajax({
-          url: url,
-          method: "GET",
-          dataType: "json",
-          data: $form.serializeObject(),
-          success: function (){
-            console.log("Message sent");
-            $('#test-form')[0].reset();
-            alert('Thank you for your interest. We would reach out to you very soon.')
-            console.log($form);
-            
-          }
-        });
+        var UserName = $('#userName').val();
+        var inputSchool = $('#inputSchool').val();
+        var staticEmail = $('#staticEmail').val();
+        if ($('#staticEmail').val().length===0){
+          bootbox.alert("Kindly check the email address again", function() {
+            });
+        }
+        else{
+          var jqxhr = $.ajax({
+            url: url+"?userName="+UserName+"&staticEmail="+staticEmail+"&inputSchool="+inputSchool+"&method=handleResponse",
+            method: "GET",
+            dataType: "json",
+            success: function (data){
+              console.log('Response From Google: ', data);
+              console.log("Message sent");
+              
+                bootbox.alert("Thank you for signing up. Be expecting our feedback within 48 hours. Stay Tuned for more!", function() {
+              });
+              
+            }
+          });
+        }
+      })
+      
+      $('#newsl').on('click', function(e) {
+        e.preventDefault();
+        var eMail=$('#newsletter').val();
+        if ($('#newsletter').val().length===0){
+          bootbox.alert("Kindly check the email address again", function() {
+            });
+        }
+        else{
+          var jqxhr = $.ajax({
+            url: url1+"?newsletter="+eMail,
+            method: "GET",
+            dataType: "json",
+            success: function (data){
+              console.log("Message sent");
+              
+              bootbox.alert("Thank you for your interest. We are pleased to have you!", function() {
+              });
+              
+            }  
+          });
+        }
+        
       })
     </script>
 
