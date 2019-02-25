@@ -9,6 +9,24 @@
     <meta name="author" content="Tech Flair">
     
     <meta name="keywords" content="Tech Flair,TechFlair,HTML,Coding,Tech Flair Ghana, women in tech">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favi/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favi/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favi/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favi/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favi/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favi/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favi/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favi/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favi/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favi/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+    <link rel="manifest" href="favi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favi/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   
 
     <title>tFlair- Tech Flair</title>
@@ -71,7 +89,7 @@
             <div class="header-content mx-auto">
               <h1 class="mb-5">It is time to get the young ones on board. Discover and enhance tech talent before someone else does!</h1>
               
-              <input class="form-control" style="margin-bottom: 10px" placeholder="Enter your Email. Eg youngtechflair@gmail.com" name="newsletter" id="newsletter">
+              <input class="form-control" style="margin-bottom: 10px" placeholder="Enter your Email. Eg techflair.tf@gmail.com" name="newsletter" id="newsletter">
               <a href="" id="newsl" class="btn btn-outline btn-xl js-scroll-trigger"> Sign Up to our weekly newsletter!</a>
             
             </div>
@@ -204,7 +222,7 @@
                   </div>
                 </div>
                 <div class="form-group row">
-                    <button type="button" class="btn btn-primary" id="submit-form">Submit</button>
+                    <button type="button" class="btn btn-primary" id="submit-form" >Submit</button>
                   </div>
               </form>
             </div>
@@ -224,13 +242,13 @@
                 <i class="fas fa-heart"></i>
                 our sponsors!</h2>
               <ul class="list-inline list-social">
-                <li class="list-inline-item" style="margin-right: 50px">
-                  <a href="https://www.toptal.com/scholarships-for-women">
-                    <img src="img/toptal.png" style="width:120px; height: 120px; align-content:center;">
+                <li class="list-inline-item"  style="margin-right: 50px">
+                  <a href="https://www.toptal.com/scholarships-for-women" target="_blank">
+                    <img src="img/toptal.png" style="width:120px; height: 120px; ">
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="www.zlitch.com">
+                  <a href="www.zlitch.com" target="_blank">
                     <img src="img/zlitch.png" style="width:120px; height: 120px; ">
                   </a>
                 </li>
@@ -241,17 +259,17 @@
                 <h2>Follow us on Social media</h2>
                 <ul class="list-inline list-social">
                   <li class="list-inline-item social-twitter">
-                    <a href="https://twitter.com/tech_flair">
+                    <a href="https://twitter.com/tech_flair" target="_blank">
                       <i class="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li class="list-inline-item social-facebook">
-                    <a href="https://www.facebook.com/techflair.tf/">
+                    <a href="https://www.facebook.com/techflair.tf/" target="_blank">
                       <i class="fab fa-facebook"></i>
                     </a>
                   </li>
                   <li class="list-inline-item social-twitter">
-                    <a href="#">
+                    <a href="linkedin.com/company/tech-flair" target="_blank">
                       <i class="fab fa-linkedin"></i>
                     </a>
                   </li>
@@ -300,6 +318,11 @@
     <script src="js/new-age.min.js"></script>
     
     <script>
+      $(document).ready(function(){
+        
+        bootbox.alert('<h2>Opportunity</h2>Volunteer with us today!! \n Follow this <a href="http://bit.ly/techflair_volunteer" target="_blank">link</a> for more information', function() {
+        });
+      })
       var $form = $('#test-form :input'),
       url = 'https://script.google.com/macros/s/AKfycbw3dwnPqeC-KepnVDINcn-P3GtoqwL_QeTuJ-JBZcWQZI5KSSn4/exec'
       url1 = 'https://script.google.com/macros/s/AKfycbw3dwnPqeC-KepnVDINcn-P3GtoqwL_QeTuJ-JBZcWQZI5KSSn4/exec'
