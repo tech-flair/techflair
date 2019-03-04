@@ -42,7 +42,6 @@ section h2{
 .myForm {
 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 font-size: 1.8em;
-width: 25em;
 padding: 1em;
 border: 1px solid #cccccc;
 background-color: rgba(180, 186, 127, 0.23);
@@ -326,7 +325,7 @@ section.contact{
     text-align:center
 }
 section.contact h2{
-    margin-top:0;
+    margin-top:40px;
     margin-bottom:25px
 }
 section.contact h2 i{
